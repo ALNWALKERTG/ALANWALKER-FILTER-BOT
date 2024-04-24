@@ -1,6 +1,5 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit CiNeMaLoKaM_MoVieS
+# Ask Doubt on telegram @ALANWALKER_TG
 
 
 import re
@@ -68,6 +67,7 @@ OWNER_USERNAME = environ.get('OWNER_USERNAME', 'kingvj01') # owner username with
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/CiNeMaLoKaM_MoVieS')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+VvTSktvaprUzZGQ1')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/How_To_Open_Linkl')
+VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/How_To_Open_Linkl')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'CiNeMaL0KaM_GrOuP') # Support Chat Link Without https:// or @
 
 # True Or False
@@ -110,9 +110,9 @@ EPISODES = ["E01", "E02", "E03", "E04", "E05", "E06", "E07", "E08", "E09", "E10"
 QUALITIES = ["360p", "480p", "720p", "1080p", "1440p", "2160p"]
 
 
-                           # Don't Remove Credit @VJ_Botz
-                           # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-                           # Ask Doubt on telegram @KingVJ01
+                          # Don't Remove Credit CiNeMaLoKaM_MoVieS
+                          # Ask Doubt on telegram @ALANWALKER_TG
+
 
 
 # Online Stream and Download
