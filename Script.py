@@ -424,7 +424,7 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 
     LOGO = """
 
-BOT WORKING PROPERLY"""
+BOT SET ANE"""
  
     TAMIL_INFO = """
 ஏய் <a href='tg://settings'>ᴍʏ ғʀɪᴇɴᴅ</a> 
@@ -669,15 +669,10 @@ Also your tutorial will be Added Your Group..."""
 
 
     DEVELOPER_TXT = """
-special Thanks To ❤️ Developers -
+special Thanks To ❤️ Developer -
 
--Dev 1 [Owner of this bot ]<a href='https://t.me/KingVj01'>VJ</a>
+ [Owner of this bot ]<a href='https://t.me/AlanWalker_TG'>𝙰𝚕𝙰𝚗𝚆𝚊𝙻𝚔𝙴𝚁</a>
 
--Dev 2 <a href='https://t.me/vjbots_bot'>VJ</a>
-
--Dev 3 <a href='https://t.me/vj_botz>VJ Botz</a>
-
-- Dev 4 <a href='https://t.me/vj_bots'>TEAM VJ</a>
 """
 
     RENAME_TXT = """
@@ -706,10 +701,3 @@ Example:- /set_caption 📕 File Name: {filename}
 
 /stream - ɢᴇᴛ sᴛʀᴇᴀᴍᴀʙʟᴇ ᴀɴᴅ ᴅᴏᴡɴʟᴏᴀᴅᴀʙʟᴇ ʟɪɴᴋ ᴏғ ᴀɴʏ ғɪʟᴇ</b>"""
 
-
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
-
-    
