@@ -11,11 +11,11 @@ async def autoapprove(client, message: ChatJoinRequest):
     print(f"{user.first_name} Joined 🤝")
     await client.approve_chat_join_request(chat_id=chat.id, user_id=user.id)
     print(user.id)
-    photo_path = "https://telegra.ph/file/4ee563b2e8a1efc87e582.jpg"
-    caption = f"Hello {user.mention} ✨\n\nYour Request to Join {chat.title} has been Approved.\n\nSend /start to know more.\nJoin US 👇👇"
+    photo_path = "https://telegra.ph/file/86fd8387e54802ccf4e6f.jpg"
+    caption = f"Hello {user.mention} ✨\n\nYour Request to Join {chat.title} has been Approved"
     buttons = [
-        [InlineKeyboardButton("requesting group", url="https://t.me/+N-d6LxO8-VozOTc9")],
-        [InlineKeyboardButton("latest movies", url="https://t.me/+ASrQmyP1AGIwOTU9")]
+        [InlineKeyboardButton("𝙼𝚘𝚟𝚒𝚎 𝚁𝚎𝚚𝚞𝚎𝚜𝚝𝚒𝚗𝚐 𝙶𝚛𝚘𝚞𝚙", url="https://t.me/CiNeMaL0KaM_GrOuP")],
+        [InlineKeyboardButton("latest movies", url="https://t.me/+iJK9VKRwSpo4ODI1")]
     ]
     user_m = user.id
     x=await client.send_photo(
