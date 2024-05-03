@@ -1,8 +1,3 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
-
 class script(object):
     START_TXT = """<b><blockquote>Hᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
     
@@ -211,20 +206,18 @@ Nᴀᴍᴇ - {}"""
 <b> Size ⚙️: {file_size}</b>""" 
 
     IMDB_TEMPLATE_TXT = """
-<b>Query: {qurey}
 
-IMDb Data:
+Requested by : {message.from_user.mention}</b>
+<b>🎬 Title</b>  : {title}</b>
+<b> 📆 Year</b> : {year}</b>
+<b> 🎭 Genres</b> : {genres}</b>
+ <b>📀 Runtime</b> : {runtime}</b>
+ <b>🌟 Rating</b> : {rating}</b>
+ <b>☀️ Languages</b> :  {languages}</b>
+<b> 💿 Quality</b> : HDRip</b>
+<b>✅UPLOADED</b> : @CiNeMaLoKaM_MoVieS </b>
 
-<b>🎬 Title</b>: <a href={url}>{title}</a>
-🎭 Genres: {genres}
-📆 Year: <a href={url}/releaseinfo>{year}</a>
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
-☀️ Languages : <code>{languages}</code></b>
-📀 RunTime: {runtime} Minutes
-📆 Release Info : {release_date}
-🎛 Countries : <code>{countries}</code></b>
-
-Requested by : {message.from_user.mention}</b>"""
+⚠️ ᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️"""
     
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
