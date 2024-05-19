@@ -29,14 +29,17 @@ BATCH_FILES = {}
 async def start(client, message):
     await message.react(emoji="🔥")
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
-        buttons = [[
-            InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-        ],[
-            InlineKeyboardButton('✪ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url="https://t.me/vj_bot_disscussion"),
-            InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/vj_bots')
-        ],[
-            InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
-        ]]
+        buttons =[[
+                InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+                InlineKeyboardButton('💠 GᏒԾUᎮ 💠', url='https://t.me/CiNeMaL0KaM_GrOuP'),
+                   InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/CiNeMaLoKaM_MoVieS')
+            ],[
+                InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
+                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+            ],[
+                InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
         await asyncio.sleep(2) # 😢 https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking.
@@ -257,9 +260,9 @@ async def start(client, message):
                 if STREAM_MODE == True:
                     button = [[
                         InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url='https://t.me/+pJdooe3PaRhmYzQ1')
                     ],[
-                        InlineKeyboardButton('SHARE ME', url="https://t.me/share/url?url=https%3A//t.me/proautofilter_bot")
+                        InlineKeyboardButton('Sʜᴀʀᴇ Mᴇ', url="https://t.me/share/url?url=https%3A//t.me/proautofilter_bot")
                     ],[
                         InlineKeyboardButton("🚀 Fast Download 🚀", url=download),  # we download Link
                         InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)
@@ -267,9 +270,9 @@ async def start(client, message):
                 else:
                     button = [[
                         InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url='https://t.me/+pJdooe3PaRhmYzQ1')
                     ],[
-                        InlineKeyboardButton('SHARE ME', url="https://t.me/share/url?url=https%3A//t.me/proautofilter_bot")
+                        InlineKeyboardButton('Sʜᴀʀᴇ Mᴇ', url="https://t.me/share/url?url=https%3A//t.me/proautofilter_bot")
                     ]]
                 msg = await client.send_cached_media(
                     chat_id=message.from_user.id,
@@ -452,18 +455,19 @@ async def start(client, message):
             if STREAM_MODE == True:
                 button = [[
                         InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url='https://t.me/+pJdooe3PaRhmYzQ1')
                     ],[
-                        InlineKeyboardButton('SHARE ME', url="https://t.me/share/url?url=https%3A//t.me/proautofilter_bot")
-                ],[
-                    InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
-                ]]
+                        InlineKeyboardButton('Sʜᴀʀᴇ Mᴇ', url="https://t.me/share/url?url=https%3A//t.me/proautofilter_bot")
+                    ],[
+                        InlineKeyboardButton("🚀 Fast Download 🚀", url=download),  # we download Link
+                        InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)
+                    ]]
             else:
                 button =[[
                         InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url='https://t.me/+pJdooe3PaRhmYzQ1')
                     ],[
-                        InlineKeyboardButton('SHARE ME', url="https://t.me/share/url?url=https%3A//t.me/proautofilter_bot")
+                        InlineKeyboardButton('Sʜᴀʀᴇ Mᴇ', url="https://t.me/share/url?url=https%3A//t.me/proautofilter_bot")
                     ]]
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
@@ -523,20 +527,21 @@ async def start(client, message):
                     )
                     return
             if STREAM_MODE == True:
-                button =[[
-                        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                    ],[
-                        InlineKeyboardButton('SHARE ME', url="https://t.me/share/url?url=https%3A//t.me/proautofilter_bot")
-                ],[
-                    InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
-                ]]
-            else:
                 button = [[
                         InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url='https://t.me/+pJdooe3PaRhmYzQ1')
                     ],[
-                        InlineKeyboardButton('SHARE ME', url="https://t.me/share/url?url=https%3A//t.me/proautofilter_bot")
+                        InlineKeyboardButton('Sʜᴀʀᴇ Mᴇ', url="https://t.me/share/url?url=https%3A//t.me/proautofilter_bot")
+                    ],[
+                        InlineKeyboardButton("🚀 Fast Download 🚀", url=download),  # we download Link
+                        InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)
+                    ]]
+            else:
+                button =[[
+                        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
+                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url='https://t.me/+pJdooe3PaRhmYzQ1')
+                    ],[
+                        InlineKeyboardButton('Sʜᴀʀᴇ Mᴇ', url="https://t.me/share/url?url=https%3A//t.me/proautofilter_bot")
                     ]]
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
@@ -595,20 +600,21 @@ async def start(client, message):
             )
             return
     if STREAM_MODE == True:
-        button = [[
+        button =  [[
                         InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url='https://t.me/+pJdooe3PaRhmYzQ1')
                     ],[
-                        InlineKeyboardButton('SHARE ME', url="https://t.me/share/url?url=https%3A//t.me/proautofilter_bot")
-                ],[
-                    InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
-                ]]
-    else:
-        button = [[
+                        InlineKeyboardButton('Sʜᴀʀᴇ Mᴇ', url="https://t.me/share/url?url=https%3A//t.me/proautofilter_bot")
+                    ],[
+                        InlineKeyboardButton("🚀 Fast Download 🚀", url=download),  # we download Link
+                        InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)
+                    ]]
+            else:
+                button =[[
                         InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url='https://t.me/+pJdooe3PaRhmYzQ1')
                     ],[
-                        InlineKeyboardButton('SHARE ME', url="https://t.me/share/url?url=https%3A//t.me/proautofilter_bot")
+                        InlineKeyboardButton('Sʜᴀʀᴇ Mᴇ', url="https://t.me/share/url?url=https%3A//t.me/proautofilter_bot")
                     ]]
     msg = await client.send_cached_media(
         chat_id=message.from_user.id,
